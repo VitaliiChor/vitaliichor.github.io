@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap');
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.main-block {
+    background: linear-gradient(to left, #f3f9ff 40%, transparent 120%), url(../img/flat.png)no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.img-legs {
+    width: 85%;
+    position: absolute;
+    right: 50px;
+    top: -85px;
+}
+
+.img-mikocin {
+    position: absolute;
+    right: 200px;
+    top: 10px;
+}
+
+.small-img-mikocin {
+    position: absolute;
+    right: 170px;
+    top: 45px; 
+}
+
+.name-drugs {
+    position: absolute;
+    right: 80px;
+    top: 25px; 
+    font-size: 22px; 
+}
+
+.drugs {
+    width: 25%;
+    position: absolute;
+    bottom: -55px;
+    right: 280px;
+    z-index: 4;
+}
+
+.grass {
+    width: 25%;
+    position: absolute;
+    bottom: 45px;
+    right: 10px;
+    z-index: 3; 
+}
+
+.mikocin-big {
+    width: 45%;
+    position: absolute;
+    bottom: -20px;
+    right: 80px;
+    z-index: 3;
+}
+
+.mikocin-middle {
+    width: 45%;
+    position: absolute;
+    bottom: -25px;
+    right: 45px;
+    z-index: 3;
+}
+
+.mikocin-small {
+    width: 45%;
+    position: absolute;
+    bottom: -100px;
+    right: 20px;
+    z-index: 3;
+}
+
+.price-for-drugs {
+    position: absolute;
+    bottom: 150px;
+    right: 70px;
+    z-index: 3;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ff6b00; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+}
+
+.middle-price-for-drugs {
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    z-index: 3;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #a8ca3f; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;  
+}
+
+.cirnle-block {
+    position: relative;
+}
+
+.border-circle {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 15px solid white;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-10deg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.drug-ad-block {
+    display: flex;
+    margin-top: 20px;
+}
+
+.block-order {
+    width: 60%;
+}
+
+.order-form {
+    width: 60%;
+    border-radius: 5px;
+    border: 5px solid #a8ca3f;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.order-delivery {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    border: 5px solid #a8ca3f;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 10px 10px;
+    background-color: #f0f6fd;
+    left: 25%;
+    top: -5px;
+}
+
+.red-arrow {
+    position: absolute;
+    top: 160px;
+    right: -15px;
+    height: 180px;
+}
+
+.order-form-info {
+    width: 55%;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    font-weight: bold;
+}
+.orange-text {
+    color: #ff6b00;
+}
+
+.order-form-price {
+    display: flex;
+    justify-content: space-around;
+}
+
+.order-old-price {
+font-size: 14px;
+opacity: 0.5;
+}
+
+.old-price {
+    font-size: 24px;
+    position: relative;
+	margin: 5px;
+	text-decoration: none;
+}
+
+.old-price:before {
+	content: "";
+	border-bottom: 1px solid #e37b4d;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	transform: rotate(-15deg);
+	left: 0;
+}
+.old-price:after {
+	content: "";
+	border-bottom: 1px solid #e37b4d;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	transform: rotate(15deg);
+	left: 0;
+}
+
+.order-new-price {
+    font-size: 14px;
+}
+
+.new-price {
+    font-size: 24px;
+    background-color: #ffc002;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px 15px;
+}
+
+.submit-design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eef2f7;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 15px;
+    color: #eaa080;
+}
+
+.submit {
+    border: none;
+    background-color: #eef2f7;
+
+}
+
+.btn-order {
+    width: 80%;
+    background-color: #ffbf02;
+    border: none;
+    border-radius: 30px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.btn-text {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    display: grid;
+}
+
+.btn-text-item {
+    font-size: small;
+}
+
+.order-info {
+    padding: 20px 0;
+}
+
+.green-text {
+    color: #a8ca3f;
+}
+
+.security-data {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    background-color: #eef2f7;
+    
+}
+
+.recommendation {
+    display: flex;
+    width: 85%;
+    opacity: 0.5;  
+    font-style: italic;  
+}
+
+.recommendation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.ad-title {
+    width: 90%;
+    font-size: 40px;
+}
+
+.ad-subtitle {
+    font-size: 26px;
+}
+
+.red-border {
+    border-bottom: 3px solid #ff6b00;
+}
+
+.green-border {
+    border-bottom: 3px solid #a8ca3f;
+}
+
+.about-drug {
+    /* width: 40%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-drug-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8ca3f;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.drug-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #e8edc9;    
+    border-radius: 50%;
+}
+
+.about-drug-text {
+    margin-left: 5px;
+}
+
+.arrow {
+    display: grid;
+    justify-content: center;
+    width: 60px;
+    height: 10px;
+   
+}
+
+.arrow-up {
+    border: solid grey;
+    border-width: 1px 0 0 1px;
+    transform: rotate(45deg);
+    display: inline-block;
+    padding: 3px;
+    margin: 2px;
+}
+
+.dot-line {
+    margin: 5px 6px;
+    height: 15px;
+    border-left: 1px solid grey;
+    display: inline-block; 
+}
+
+.main-block-preparation {
+display: flex;
+}
+
+.drug-ad {
+    display: grid;
+    grid-template-rows: 40% 20% 20% 20%;
+    width: 40%;
+    line-height: 1.2;
+}
+
+/* Block about illness */
+.illness-block {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-mikocin-illness {
+    position: absolute;
+    right: 35%;
+    top: -55px;
+}
+
+.illness-title {
+    display: grid;
+    line-height: 2;
+    text-align: center;
+    margin: 100px;
+}
+
+.illness-text {
+    margin: 15px;
+    text-align: left;
+}
+
+.examples-illness {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description-illness {
+    width: 20%;
+    position: relative;
+}
+
+.illness-info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+}
+
+.img-illness {
+    border-radius: 50%;
+}
+
+.allergy-border {
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    border: 15px solid #ec9a6a;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-5deg);
+    position: absolute;
+    right: 70px;
+    bottom: 115px;
+}
+
+.allergy-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec9a6a;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 75px;
+    bottom: 255px;
+}
+
+.finger-border {
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    border: 15px solid #e47643;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-3deg);
+    position: absolute;
+    right: 70px;
+    bottom: 130px;
+}
+
+.finger-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e47643;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 75px;
+    bottom: 265px;
+}
+
+.internal-border {
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    border: 15px solid #ec5b19;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-5deg);
+    position: absolute;
+    right: 70px;
+    bottom: 115px;
+}
+
+.internal-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec5b19;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 75px;
+    bottom: 255px;
+}
+
+.grey-line {
+    width: 25%;
+    border-top: 2px solid #becbd8;
+    margin: 40px 0;
+}
+
+.statistics-illness {
+    width: 55%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #f4d3bb;
+    position: relative;
+}
+
+.graph-img {
+    position: absolute;
+    top: -25px;
+    background-color: white;
+    width: 15%; 
+}
+
+/*End Block about illness */
+
+
+.wave {
+    width: 100%;
+    position: absolute;
+    top: -115px;
+}
