@@ -561,7 +561,7 @@ display: flex;
 
 @media (max-width: 480px){
     .container {
-        width: 990px;
+        width: 480px;
     }
 
     
@@ -603,7 +603,7 @@ display: flex;
     }
 
     .ad-title {
-        width: 90%;
+        width: 100%;
         font-size: 40px;
     }
 
@@ -620,7 +620,7 @@ display: flex;
 
     .drug-ad-block {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 40px;
         margin-top: 20px;
         width: 100%;
     }
@@ -632,15 +632,18 @@ display: flex;
     }
 
     .illness-title {
-        width: 45%;
+        width: 80%;
         margin: 70px 10px;
+    }
+
+    .description-illness {
+        width: 50%;
     }
 
     .examples-illness {
         display: grid;
+        margin: 90px;
         gap: 50px;
-        justify-content: space-around;
-        align-items: center;
     }
    
     .allergy-border {
@@ -687,14 +690,11 @@ display: flex;
     }
 
     .statistics-illness {
-        width: 30%;
-        margin: 50px 30px;
-        display: flex;
-        justify-content: center;
-        
-        padding: 40px;
-        border: 2px solid #f4d3bb;
-        position: relative;
+        width: 50%;
+    margin: 50px 40px;
+    display: grid;
+    
+}
     }
     
 }
