@@ -14,6 +14,7 @@
     
 }
 
+
 .img-legs {
     width: 85%;
     position: absolute;
@@ -555,4 +556,145 @@ display: flex;
     width: 100%;
     position: absolute;
     top: -115px;
+}
+
+
+@media (max-width: 480px){
+    .container {
+        width: 990px;
+    }
+
+    
+
+    .wave, .img-legs, .cirnle-block, .order-delivery, .red-arrow {
+        display: none;
+    }
+
+    .img-mikocin {
+        position: absolute;
+        right: 370px;
+        top: 10px;
+    }
+
+    .small-img-mikocin {
+        position: absolute;
+        right: 340px;
+        top: 45px;
+    }
+
+    .order-form {
+        
+        border-radius: 5px;
+        border: 5px solid #a8ca3f;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .block-about-drug {
+        display: grid;
+        text-align: center;
+    }
+
+    .recommendation {
+        
+        opacity: 0.5;
+        font-style: italic;
+    }
+
+    .ad-title {
+        width: 90%;
+        font-size: 40px;
+    }
+
+    .drug-ad {
+        display: grid;
+        grid-template-rows: 50% 20% 20% 20%;
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    .block-order {
+        width: 100%;
+    }
+
+    .drug-ad-block {
+        display: grid;
+        grid-gap: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .about-drug {
+        margin: 0 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .illness-title {
+        width: 45%;
+        margin: 70px 10px;
+    }
+
+    .examples-illness {
+        display: grid;
+        gap: 50px;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    .allergy-border {
+        
+        position: absolute;
+        right: -40px;
+        bottom: 145px;
+    }
+
+    .allergy-item {
+        
+        position: absolute;
+        right: -20px;
+        bottom: 290px;
+    }
+
+    .finger-border {
+       
+        position: absolute;
+        right: -35px;
+        bottom: 175px;
+    }
+
+    .finger-item {
+       
+        position: absolute;
+        right: -25px;
+        bottom: 310px;
+
+    }
+
+    .internal-border {
+       
+        position: absolute;
+        right: -35px;
+        bottom: 145px;
+    }
+
+    .internal-item {
+        
+        position: absolute;
+        right: -15px;
+        bottom: 295px;
+    }
+
+    .statistics-illness {
+        width: 30%;
+        margin: 50px 30px;
+        display: flex;
+        justify-content: center;
+        
+        padding: 40px;
+        border: 2px solid #f4d3bb;
+        position: relative;
+    }
+    
 }
