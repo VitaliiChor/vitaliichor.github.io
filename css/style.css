@@ -28,6 +28,7 @@ html,body,header, #intro {
 
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse){
+    
         background-color: rgb(47, 35, 160);
     }
 }
