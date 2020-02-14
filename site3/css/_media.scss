@@ -1,0 +1,59 @@
+@media (max-width: 992px) {
+    body {
+        // font-size: 20px;
+        header {
+            padding: 3rem 0;
+        }
+        .popcat {
+        a {
+            p {
+                font-size: 1em;
+            }
+         }
+       }
+       .adv {
+           img {
+               width: 10rem;
+           }
+       }
+       .form-check {
+           button {
+               margin-bottom: 1.5rem;
+           }
+       }
+       .popgoods {
+           .row {
+               .title {
+                   margin: 0;
+               }
+               h4 {
+                   padding: 1rem;
+                   margin: 1rem 3rem;
+               }
+               padding-bottom: 0;
+               div {
+                   margin-bottom: 1.5rem;
+               }
+           }
+       }
+       footer {
+           font-size: 0.8em;
+       }
+    }
+}
+
+@media (max-width: 768px) {
+    body  {
+        .title{
+        &::before, &::after {
+            content: '';
+            display: none;
+        }
+        }
+        header {
+            p {
+            font-size: 0.8em;
+            }
+        }
+    }
+}

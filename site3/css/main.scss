@@ -1,0 +1,331 @@
+$primary-color-dark:   #303F9F;
+$primary-color:        #3F51B5;
+$primary-color-light:  #C5CAE9;
+$primary-color-text:   rgb(255, 255, 255);
+$accent-color:         #448AFF;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+$pr-color:             #3f51b5;
+
+@mixin bgimg($src) {
+        background-image: url($src);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+@mixin gradient-bg($color1, $color2, $color3) {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(left, $color1 0%, $color2 50%, $color3 100%);
+        opacity: 0.6;
+}
+
+@mixin input-color($placeholder-color) {
+        &::-webkit-input-placeholder {
+            color: $placeholder-color;
+        }
+        &:-moz-input-placeholder {
+            color: $placeholder-color;
+        }
+        &:-ms-input-placeholder {
+            color: $placeholder-color;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+    // background-color: $divider-color;
+    color: $secondary-text-color;
+    // text placeholder
+   
+    .container {
+        padding: 0;
+    }
+    //Title
+    .title {
+        overflow: hidden;
+        text-align: center;
+        h4 {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold;
+            color: $primary-color-text;
+            margin: 2rem 0;
+            padding: 2rem;
+            font-size: 1.5em;
+        }
+        &:before,
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 20%;
+            height: 1rem;
+            background-color: $primary-color;
+            position: relative;
+            opacity: 0.5;
+        }
+        &::before {
+            margin-left: -100%;
+            left: 1.5rem;
+        }
+        &::after {
+            margin-right: -100%;
+            right: 1.5rem;
+        }
+    }
+    //btn
+    .btn {
+        border: 2px solid $primary-color;
+        background-color: $primary-color-light;
+        color: $primary-color;
+        border-radius: 0.5rem;
+        font-size: 1em;
+        padding: 1rem 2rem;
+        transition: all 0.4s;
+        &:hover {
+            background-color: $primary-color;
+            color: $primary-color-text;
+        }
+    }
+    .btn-inverse {
+        border: 2px solid $primary-color;
+        background-color: $primary-color;
+        color: $primary-color-text;
+        border-radius: 0.5rem;
+        font-size: 1em;
+        padding: 1rem 2rem;
+        transition: all 0.4s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    // Menu
+    .navbar {
+        padding: 0.3rem 5rem;
+        border: 1px solid $primary-text-color;
+        font-weight: bold;
+        .number-phone {
+            color: $primary-color;
+        }
+        .navbar-nav {
+        li.nav-item > a.nav-link {
+            color: $primary-text-color;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        li.active > a.nav-link {
+            color: $primary-color;
+            }
+        }
+    }
+    // Header
+    header {
+        @include bgimg("../img/header.jpg");
+        padding: 10rem;
+        .row {
+            background-color: rgba($primary-color-text, 0.8);
+            border-radius: 1rem;
+        }
+        p {
+            color: $primary-text-color;
+            
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: bold;
+            color: $primary-text-color;
+            >span {
+                color: $primary-color;
+            }
+        }
+        form {
+            border: double 1rem $primary-color-text;
+           div { 
+               background: rgba($primary-color-text, 0.8);
+               padding: 1.5rem;
+           }
+           span {
+               color: $primary-color;
+               font-weight: bold;
+               font-size: 1.6rem;
+           }
+           input {
+               width: 100%;
+               padding: 1rem;
+               background-color: transparent;
+               border: 2px solid $primary-color;
+               border-radius: 0.5rem;
+               margin-top: 1.5rem;
+               margin-bottom: 1.5rem;
+               @include input-color($primary-color);
+           }
+        }
+    }
+    // Pop cat
+    .popcat {
+        @include bgimg ("../img/paper-bg.jpg");
+        padding-bottom: 4rem;       
+        
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            p {
+                padding: 0;
+                margin: 0;
+                font-weight: bold;
+                color: $primary-color-text;
+                text-shadow: 0 0  3px $primary-color-text;
+                font-size: 1.5em;
+                z-index: 100;
+                transition: all 1s;
+                position: absolute;
+            }
+            img {
+                transition: all 1s;
+            }
+            &:hover {
+                img {
+                background-color: $primary-color-light;
+                transform: scale(1.1);
+                }
+                p {
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+    //adv
+    .adv {
+        color: $primary-color-text;
+        @include bgimg ("../img/imac-bg.jpg");
+        
+        position: relative;
+        &::before {
+            @include gradient-bg($primary-color-dark,$primary-color , $primary-color-text);
+        }
+        .row {
+            padding: 3rem 0;
+        }
+        h6 {
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+    }
+    //popular 
+    .popgoods {
+        @include bgimg ("../img/paper-bg.jpg");
+        .row {
+            padding-bottom: 3rem;
+        }
+        .row:first-child {
+            padding-bottom: 0;
+        } 
+        p {
+            color: $primary-color-text;
+            font-weight: bold;
+            background-color: $primary-color;
+        }
+        h6 {
+            font-size: 1em;
+            color: $primary-color-text;
+        }
+    }
+    // Order
+    .form-check {
+        position: relative;
+        @include bgimg("../img/call-center-bg.jpg");
+        &::before {
+            @include gradient-bg($primary-color-dark,$primary-color , $primary-color-text)
+        }
+        .img-fluid {
+            width: 100px;
+        }
+        .row {
+            padding: 3rem 0;
+        }
+        h5 {
+            font-size: 1.2em;
+        }
+        h6 {
+            font-size: 1em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+        img {
+            margin-bottom: 1.5rem;
+            transition: all 0.5s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        input {
+            width: 100%;
+            padding: 1rem;
+            background: transparent;
+            border: 2px solid $primary-color-text;
+            margin-bottom: 1rem;
+            @include input-color($primary-color-text);
+        }
+        button {
+            color: $primary-color-text;
+            border: 2px solid $primary-color-text;
+            background-color: transparent;
+            padding: 1rem;
+        }
+    }
+// reviews
+    .reviews {
+        padding-bottom: 3rem;
+        @include bgimg ("../img/paper-bg.jpg");
+        .card {
+            height: 100%;
+            h5 {
+                font-size: 1em;
+                color: $primary-color;
+            }
+        }
+    }
+    //footer
+    footer {
+        border: 1px solid $primary-text-color;
+        color: $primary-text-color;
+        background-color: $primary-color-text;
+        menu {
+            a.active {
+                color: $primary-color;
+            }
+            a {
+                color: $primary-text-color;
+                &:hover {
+                    color: $primary-color;     
+                }
+            }
+        }
+        p {
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@import 'media';
