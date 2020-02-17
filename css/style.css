@@ -1,34 +1,225 @@
-html,body,header, #intro {
-    height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap');
+
+
+/* font-family: 'Merriweather', serif;
+font-family: 'PT Sans Caption', sans-serif; */
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-#intro {
-    background: url(../img/city.png)no-repeat center center fixed;
-    -webkit-background-size: cover;
+.header {
+    background: linear-gradient( rgba(67, 141, 211, 0.8), rgba(0, 0, 0, 0.5) ), url(../img/office-bg.png);
     background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+     height: 100vh;
+     color: #fff;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     
 }
 
-.top-nav-collapse {
-    background-color: rgb(47, 35, 160);
+.header-title {
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-family: 'Merriweather', serif;
+    margin-top: -50px;
 }
 
-.map-container{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.header-slogan {
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.header-phone {
+    text-decoration: none;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header-arrow {
+    font-size: 48px;
+    position: absolute;
+    bottom: 50px;
+    transition: all 2s;
+    animation: animate 1s infinite;
+    animation-timing-function: linear; 
+}
+
+
+@keyframes animate {
+    0% {
+        margin-bottom: 20px;
     }
-    .map-container iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    50% {
+        margin-bottom: 0px;
+    }
+    100% {
+        margin-bottom: 20px;
+    }
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Portfolio */
+#advantages-container {
+    display: flex;
+    justify-content: center;
+}
+
+.advantages-name {
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.advantages-item {
+    width: 30%;
+}
+
+.advantages-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.advantages-item a:hover {
+    color: rgba(67, 141, 211, 0.8);
+}
+
+.image-size {
+    height: 150px;
+}
+
+/* Footer */
+footer{
+    background-color: #061634;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    font-family: 'Merriweather', serif;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-slogan {
+    opacity: 0.7;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-social-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-social-icon i {
+    font-size: 24px;
+}
+
+.btn {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+
+
+/*End Footer */
+
+/* Media */
+@media (max-width: 420px) {
+    .container {
+        width: 100%;
     }
 
-@media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse){
-    
-        background-color: rgb(47, 35, 160);
+    .header-title {
+        font-size: 25px;
+        margin-bottom: 10px;
     }
+
+    .header-slogan {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .header-phone {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .header-arrow {
+        font-size: 18px;
+        bottom: 30px;
+    }
+ 
+
+    .advantages {
+        flex-direction: column;
+
+    }
+
+    .advantages-item {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .footer-col {
+        margin-bottom: 20px;
+    }
+
 }
