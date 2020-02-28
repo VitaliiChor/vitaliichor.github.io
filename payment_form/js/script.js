@@ -16,7 +16,6 @@ $("#payment-button").click(function (e) {
   let date = $('#cc-exp').val().split('/');
   let regMonth = /^01|02|03|04|05|06|07|08|09|10|11|12$/;
   let regYear = /^20|21|22|23|24|25|26|27|28|29|30|31$/;
-  // let suc = $('#success-message');
   if (form[0].checkValidity() === false) {
     e.preventDefault();
     e.stopPropagation();
@@ -46,19 +45,10 @@ $("#payment-button").click(function (e) {
       return false;
 
     }
-
-
-    form.submit(function () {
-      $.ajax({
-        type: 'POST',
-        url: 'https://www.paypal.com/cgi-bin/webscr',
-        data: 'параметры',
-        complete: function () {
-          $('#pay-invoice').hide();
-        }
-      });
-    })
-
+    
+    $('#success-message').show();
+    $('#pay-invoice').hide();
+    
   }
   form.addClass('was-validated');
 
