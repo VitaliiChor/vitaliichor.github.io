@@ -20,8 +20,15 @@
 </head>
 <body>
   <div class="container-fluid py-3">
+    
+
     <div class="row">
-        <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
+        
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto ">
+            <button type="button" class="close ml-2 text-black-50" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+
             <div id="pay-invoice"  class="card">
                 <div class="card-title black text-white d-flex justify-content-between p-2 mb-0 rounded-top">
                         <img class="w-25" src="./img/logo.png" alt="Logo">
@@ -31,6 +38,7 @@
                              123 284 грн
                         </div>
                     </div>
+                    
                 <div class="card-body">                 
                     
                     <form method="dialog" novalidate="novalidate" class="z-depth-1-half rounded-lg">
@@ -99,7 +107,7 @@
                                 <span id="payment-button-amount">Оплатити 123 284 грн </span>
                                 <span id="payment-button-sending" style="display:none;">Sending…</span>
                             </button>
-                            <label class=" text-black-50 font-small mb-5">На выконання платежу 00:11:51</label>
+                            <label class="text-black-50 font-small mb-5">На выконання платежу 0:<span class="time"></span></label>
                         </div>
                     </form>                 
                     
