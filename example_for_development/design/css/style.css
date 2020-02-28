@@ -37,6 +37,7 @@ header {
 
 .header-container a {
     color: #000;
+    text-decoration: none;
     font-size: 16px;
     margin-right: 63px;
     padding: 27px 7px;

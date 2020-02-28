@@ -28,3 +28,31 @@ stpbl3.onmouseover = function() {
 stpbrdr3.onmouseout = function() {
     stpbrdr3.style.borderBottom = "3px solid black"
 }
+
+let fullname = 'Hello World';
+
+var obj = {
+
+fullname: 'my name',
+
+prop: {
+
+fullname: 'Not my name',
+
+getFullname: function() {
+
+return this.fullname;
+
+}
+
+}
+
+};
+
+console.log(obj.prop.getFullname());
+
+var test = obj.prop.getFullname;
+
+console.log(test());
+
+    
